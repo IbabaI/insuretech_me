@@ -31,16 +31,16 @@ def getAIAData(name, birth, gender):
             '//*[@id="calculator-container-form"]/div[1]/div[2]/div/div[1]/div/div[3]/div[1]/div[1]')
         femaleButton.click()
         
-birthInput = driver.find_element_by_xpath('//*[@id="aia644363719"]')
-birthInput.send_keys("19"+birth)
+    birthInput = driver.find_element_by_xpath('//*[@id="aia644363719"]')
+    birthInput.send_keys("19"+birth)
 
-confirmButton = driver.find_element_by_xpath('//*[@id="btn806817556"]')
-confirmButton.click()
+    confirmButton = driver.find_element_by_xpath('//*[@id="btn806817556"]')
+    confirmButton.click()
 
-driver.implicitly_wait(3)
-htmlResult = driver.find_element_by_xpath(
-    '//*[@id="premium-by-timespan-value"]')
-print(htmlResult.text)
+    driver.implicitly_wait(3)
+    htmlResult = driver.find_element_by_xpath(
+        '//*[@id="premium-by-timespan-value"]')
+    print(htmlResult.text)
 
 # 여자 버튼을 클릭하라
 # 여기에 작성
