@@ -30,10 +30,14 @@ def getAIAData(name, birth, gender):
         felmaleButton.click()
 
     brthDt = driver.find_element_by_name('brthDt')
-    brthDt.send_keys("19"+bityh)
+    brthDt.send_keys("19850615")
 
     Button = driver.find_element_by_xpath('//*[@id="btn806817556"]')
     Button.click()
 
+    driver.implicitly_wait(3)
+    htmlResult = driver.find_element_by_xpath(
+        '//*[@id="premium-by-timespan-value"]')
+    print(htmlResult.text)
     
-getAIAData("이름", "700101", 0)
+getAIAData("이름", "850615", 0)
