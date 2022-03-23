@@ -3,7 +3,9 @@ function myFunction(p1, p2){
     return p1 + p2;
 };
 
-//   위 아래 코드는 하는일이 같다. 차이점은 거의 없고, 아래는 Arrow function 이다.
+//  위 아래 코드는 하는일이 같다. 차이점은 거의 없고, 아래는 Arrow function 이다.
+//  Arrow Function 은 자신만의 this를 생성하지 않음.
+//  화살표 함수는 자신의 this가 바인드 되지 않기 때문에 함수의 스코프에서의 this 가 적용.
 
 const plus = (p1, p2) => {
     return p1 + p2;
