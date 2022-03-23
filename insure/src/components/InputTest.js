@@ -7,12 +7,12 @@ const InputTest = () => {
     const handleChange = (event) => {
         const { value} = event.target;
         setText(value);
-        console.log(text);
+     //   console.log(text);
     };
   return (
     <div>
         <p>{text}</p>
-        <input onChange={handleChange}></input>
+        <input onChange={handleChange} />
     </div>
   );
 };
