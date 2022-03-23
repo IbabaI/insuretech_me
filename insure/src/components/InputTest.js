@@ -1,12 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 // rafce 자동완성
 const InputTest = () => {
+//    let text = "test";
+    const [text, setText] = useState("test");
+
     const handleChange = (event) => {
         const { value} = event.target;
-        console.log(value);
+        setText(value);
+        console.log(text);
     };
   return (
     <div>
+        <p>{text}</p>
         <input onChange={handleChange}></input>
     </div>
   );
