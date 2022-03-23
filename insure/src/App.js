@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import InputTest from './components/InputTest';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Header title={"테스트 페이지1"}></Header>
       <Header title={"테스트 페이지2"}></Header>
       <Header title={"테스트 페이지3"}></Header>
-
+      <InputTest></InputTest>
     </>
   );
 }
