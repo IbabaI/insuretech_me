@@ -9,6 +9,14 @@ let car = {
     },
 };
 
-console.log(car.carname);
-car.start();  //메소드로 선언된 것을 실행하려면 () 해줘야 가능
-console.log(car.start);
+// console.log(car.carname);
+// car.start();  //메소드로 선언된 것을 실행하려면 () 해줘야 가능
+// console.log(car.start);
+
+
+// const carname = car.carname;
+// const carph = car.ph;
+
+const { carname, ph} = car;
+console.log(carname);
+console.log(ph);
