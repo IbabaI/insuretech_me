@@ -14,7 +14,7 @@ const EncryptPage = () => {
     const { value } = e.target;
     setPlainText(value);
   };
-
+ 
   return (
     <div>
       <Header title={"데이터 암호화"}></Header>
